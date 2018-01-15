@@ -1,7 +1,20 @@
 <p>
-  products works!
+  Lista de produtos do {{ nomeEstabelecimento }}
 </p>
 
 <!-- product-detail is private, visible only for the module products
     because isn't exported in products.module, just ProductsComponent -->
 <app-product-detail></app-product-detail>
+
+<ul>
+  <li *ngFor="let product of products">
+    {{ product }}
+  </li>
+</ul>
+
+<p>Imagem com interpolação</p>
+
+<img src="{{ picture }}" alt="">
+
+<p>Imagem com property binding</p>
+<img [src]="picture">

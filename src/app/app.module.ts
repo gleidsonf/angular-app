@@ -12,7 +12,7 @@ import { ProductsModule } from './products/products.module';
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
-    MeuPrimeiro2Component // gambiarra
+    MeuPrimeiro2Component
   ],
   imports: [
     BrowserModule,
